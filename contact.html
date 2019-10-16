@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,14 +11,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        p{color: whitesmoke;}
+        
         img{height: 400px;
             width: 400px;}
         #pad{
-            padding: 20px;
+            padding-top: 20px;
         }   
-        #back{background-color: wheat;}
-    
+        #back{background: #ffffff;
+        width: 90%;
+        height: 440px;
+        }
+        #namebox{
+        color: white;
+        background-color: #4aaaa5;
+        width: 300px;
+        height: 70px;
+        padding: 10px;
+        text-align: center;
+        }
     </style>
 
     <title>Justin Abreu</title>
@@ -31,7 +41,7 @@
         <div class="row">
             <div class="col">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <h1>Justin Abreu</h1>
+              <h1 id="namebox" id="pad">Justin Abreu</h1>
 
                 <div class="col-6"></div>
                 
@@ -50,28 +60,45 @@
                     </div>
                 </nav>
             </div>
-            
-        </div>    
+        </div>   
 
-        <div class="row" id="pad">
-                <div class="col" id="back">
-                        <form>
-                                <div class="form-group">
-                                  <label for="exampleFormControlInput1">Name</label>
-                                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="First and Last Name.com">
-                                </div>
-                                <div class="form-group">
-                                <label for="exampleFormControlInput1">Email</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="youremail@email.com">
-                                </div>
+        <div class="row" id="pad"></div> 
         
-                                <div class="form-group">
-                                  <label for="exampleFormControlTextarea1">Message</label>
-                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                              </form>
-                </div> 
+        <div class="mx-auto" style="width: 960px;">
+
+            <div class="row" id="back" >
+                    <div class="col-4" class="mx-auto" style="width: 100px;" ></div>
+                            <div class="row"></div>
+                            <div class="col-6" id="namebox" id="back">
+                                <h2>Contact</h2>   
+                            </div>
+                    
+                    
+                        
+                            <div class="col-12" >
+
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Name</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="First and Last Name.com">
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="exampleFormControlInput1">Email</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="youremail@email.com">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Message</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>  
+                        </div>                  
+                    </div>
+            </div> 
+        </div>
+
 
     </div>
     
